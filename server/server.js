@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 //Middleware
 app.use(express.static(publicPath));
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 });
 
