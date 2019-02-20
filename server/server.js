@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //Middleware
-app.use(express.static(publicPath))
+app.use(express.static(publicPath));
 
 app.listen(3000, () => console.log(`Listening on port ${port}`));
 
