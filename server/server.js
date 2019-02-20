@@ -1,4 +1,4 @@
-//Librarie
+//Libraries
 const path = require('path');
 const express = require('express');
 
@@ -10,6 +10,8 @@ const port = process.env.PORT || 3000;
 //Middleware
 app.use(express.static(publicPath));
 
-app.listen(3000, () => console.log(`Listening on port ${port}`));
+app.listen(3000, () => {
+    console.log(`Listening on port ${port}`)
+});
 
 
