@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "watch": "nodemon server/server.js"
+    "watch": "nodemon server/server.js",
+    "test": "mocha --timeout 15000 server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "engines": {
     "node": "8.11.3"
@@ -14,9 +16,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
+    "expect": "^24.1.0",
+    "mocha": "^6.0.0",
     "socket.io": "^2.2.0"
   }
 }
